@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "2.4"
+metadata:
+  name: hcm.ux.hapv3
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: AGT
+          url: https://fioridev.agt.com.tr
+          client: "100"
+        app:
+          name: ZHCM_UX_HAP_V3
+          description: Değerlendirme formları
+          package: ZHR_UX
+          transport: AEDK931821

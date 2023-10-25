@@ -1,0 +1,7 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:smod="com.smod.ux.lib.controls">
+    <Popover class="sapUiNoContentPadding" placement="Auto" showHeader="false">
+        <smod:HierarchyView title="Hedef Yolu" hierarchy="{formDetailsModel>/objectiveHierarchy}" currentNode="{}" />
+    </Popover>
+</core:FragmentDefinition>

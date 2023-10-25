@@ -1,0 +1,5 @@
+<mvc:View controllerName="hcm.ux.hapv3.controller.FormDetails"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc">
+	<core:Fragment fragmentName="hcm.ux.hapv3.fragment.FormDetails" type="XML" />
+</mvc:View>
